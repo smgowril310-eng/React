@@ -1,1 +1,7 @@
-
+body{
+    background-color:#F8c8DC !important;
+}
+.table thead th{
+    background-color: #6f42c1;
+    color: white;
+}

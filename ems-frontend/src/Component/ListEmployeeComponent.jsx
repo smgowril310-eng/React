@@ -41,7 +41,7 @@ useEffect(() => {
         <h2 className="text-center mb-4">List of Employees</h2>
         <button
     className="btn btn-primary mb-3 w-100 w-md-auto"
-    onClick={addNewEmployee}
+    onClick={addNewEmployee} style={{backgroundColor:"rgb(128,0,128"}}
 >
     Add Employee
 </button>

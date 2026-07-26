@@ -4,8 +4,8 @@ const HeaderComponent = () => {
   return (
     <div>
         <header>
-            <nav className='navbar navbar-dark bg-dark'>
-                <a className="navbar-brand" href="#">Employee Management System</a>
+            <nav className="navbar navbar-dark" style={{backgroundColor:"rgb(128,0,128)"}}>
+                <a className="navbar-brand" style={{marginLeft:"20px"}} href="#">Employee Management System</a>
             </nav>
         </header>
     </div>
