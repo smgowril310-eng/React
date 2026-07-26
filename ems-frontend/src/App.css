@@ -7,3 +7,17 @@
     text-align: center;
     color: white;
 }
+@media (max-width:768px){
+
+h2{
+    font-size:26px;
+}
+
+.table{
+    font-size:14px;
+}
+
+.btn{
+    width:100%;
+}
+}

@@ -37,10 +37,16 @@ useEffect(() => {
         })
     }
   return (
-    <div className='container'>
-        <h2>List of Employees</h2>
-        <button className='btn btn-primary mb-2' onClick={addNewEmployee}>Add Employee</button>
-        <table className='table table-striped table-bordered'>
+    <div className='container mt-4'>
+        <h2 className="text-center mb-4">List of Employees</h2>
+        <button
+    className="btn btn-primary mb-3 w-100 w-md-auto"
+    onClick={addNewEmployee}
+>
+    Add Employee
+</button>
+        <div className="table-responsive">
+    <table className="table table-striped table-bordered">
             <thead>
                 <tr>
                     <th>Employee Id</th>
@@ -60,16 +66,28 @@ useEffect(() => {
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
                             <td>
-                                <button className='btn btn-info' onClick={() => updateEmployee(employee.id)}>Update</button>
-                                <button className='btn btn-danger' onClick={() => removeEmployee(employee.id)}
-                                    style={{marginLeft:'10px'}}
-                                    >Delete</button>
-                            </td>
+    <div className="d-flex flex-column flex-md-row gap-2">
+        <button
+            className="btn btn-info btn-sm"
+            onClick={() => updateEmployee(employee.id)}
+        >
+            Update
+        </button>
+
+        <button
+            className="btn btn-danger btn-sm"
+            onClick={() => removeEmployee(employee.id)}
+        >
+            Delete
+        </button>
+    </div>
+</td>
                         </tr>
                     )
                 }
             </tbody>
         </table>
+        </div>
     </div>
   )
 }
